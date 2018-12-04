@@ -471,29 +471,35 @@
             <p>Please fill out the form below to receive information of the Project in a PDF Brochure.
 
             </p>
-        <form>
-          <div class="row">
+            <form accept-charset="UTF-8" action="https://sy417.infusionsoft.com/app/form/process/c8cd106192d464b45f8b09d9eb6f0e36" class="infusion-form" id="inf_form_c8cd106192d464b45f8b09d9eb6f0e36" method="POST">         
+                <input name="inf_form_xid" type="hidden" value="c8cd106192d464b45f8b09d9eb6f0e36" />
+                <input name="inf_form_name" type="hidden" value="Una English" />
+                <input name="infusionsoft_version" type="hidden" value="1.70.0.74157" />    
+            <div class="row">
             <div class="col-md-6 col-xl-12">
               <div class="form-group has-icon-left form-control-name">
-                <label class="sr-only" for="inputName">Last Name</label>
-                <input type="text" class="form-control form-control-lg" id="inputName" placeholder="Last Name">
+
+                    <label class="sr-only" for="inf_field_FirstName">First Name *</label>
+                    <input type="text" class="form-control form-control-lg" id="inf_field_FirstName" name="inf_field_FirstName" placeholder="First Name *" type="text">
+ 
               </div>
             </div>
             <div class="col-md-6 col-xl-12">
                 <div class="form-group has-icon-left form-control-email">
-                  <label class="sr-only" for="inputEmail">First Name</label>
-                  <input type="email" class="form-control form-control-lg" id="inputEmail" placeholder="First Name" autocomplete="off">
+
+                        <label class="sr-only" for="inf_field_LastName">Last Name *</label>
+                        <input type="text" class="form-control form-control-lg" id="inf_field_LastName" name="inf_field_LastName" placeholder="Last Name *" type="text">
                 </div>
               </div>
             <div class="col-md-6 col-xl-12">
               <div class="form-group has-icon-left form-control-email">
-                <label class="sr-only" for="inputEmail">Email</label>
-                <input type="email" class="form-control form-control-lg" id="inputEmail" placeholder="Email" autocomplete="off">
+                    <label class="sr-only" for="inf_field_Email">Email *</label>
+                <input type="email" class="form-control form-control-lg" id="inf_field_Email" name="inf_field_Email" placeholder="Email *" type="text">
               </div>
             </div>
             <div class="col-md-7 col-xl-7">
               <div class="form-group">
-                <button type="submit" class="btn btn-primary btn-block">Soumettre</button>
+                <button type="submit" class="btn btn-primary btn-block"id="recaptcha_c8cd106192d464b45f8b09d9eb6f0e36" type="submit">Submit</button>
               </div>
             </div>
           </div>
@@ -597,6 +603,10 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script src="js/app.js"></script>
         <script src="js/index.js"></script>
+        <script type="text/javascript" src="https://sy417.infusionsoft.com/app/webTracking/getTrackingCode"></script>
+        <script type="text/javascript" src="https://sy417.infusionsoft.com/resources/external/recaptcha/production/recaptcha.js?b=1.70.0.74157"></script>
+        <script src="https://www.google.com/recaptcha/api.js?onload=onloadInfusionRecaptchaCallback&render=explicit" async="async" defer="defer"></script>
+        <script type="text/javascript" src="https://sy417.infusionsoft.com/app/timezone/timezoneInputJs?xid=c8cd106192d464b45f8b09d9eb6f0e36"></script>
 
 </body>
 
